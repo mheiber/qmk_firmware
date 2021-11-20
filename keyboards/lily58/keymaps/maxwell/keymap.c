@@ -69,11 +69,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                   `----------------------------'           '------''--------------------'
  */
 	[_RAISE] = LAYOUT(
-  KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                       KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS,
-  KC_TRNS, KC_NO, KC_NO, KC_WH_U, KC_NO, KC_NO,                                     KC_NO, KC_NO, KC_UP, KC_NO, KC_NO, KC_TRNS,
-  KC_TRNS, KC_NO, KC_WH_L, KC_WH_D, KC_WH_R, KC_NO,                                 KC_NO, KC_LEFT, KC_DOWN, KC_RIGHT, KC_NO, KC_TRNS,
-  KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,     SGUI(KC_LBRC), SGUI(KC_RBRC),     KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS,
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                                               KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS)
+  KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                       KC_MPLY, KC_MRWD, KC_MFFD, KC_MUTE, KC_VOLD, KC_VOLU,
+  KC_TRNS, KC_NO, KC_WH_D, KC_MS_U, KC_WH_U, KC_NO,                                     KC_PGUP, KC_HOME, KC_UP, KC_END, KC_ACL1, KC_ACL2,
+  KC_TRNS, KC_WH_L, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_R,                                 KC_PGDN, KC_LEFT, KC_DOWN, KC_RIGHT, KC_ACL0, KC_TRNS,
+  KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,     KC_BTN2, KC_BTN1,     KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS,
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                                               KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
+
+    // [_ADJUST] = LAYOUT(
+  // KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                       KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS,
+  // KC_TRNS, KC_NO, KC_NO, KC_WH_U, KC_NO, KC_NO,                                     KC_NO, KC_NO, KC_UP, KC_NO, KC_NO, KC_TRNS,
+  // KC_TRNS, KC_NO, KC_WH_L, KC_WH_D, KC_WH_R, KC_NO,                                 KC_NO, KC_LEFT, KC_DOWN, KC_RIGHT, KC_NO, KC_TRNS,
+  // KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,     SGUI(KC_LBRC), SGUI(KC_RBRC),     KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS,
+  // KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                                               KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS)
+
 };
 
 layer_state_t layer_state_set_user(layer_state_t state) {

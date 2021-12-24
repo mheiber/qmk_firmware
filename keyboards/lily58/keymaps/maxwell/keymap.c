@@ -24,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                   `----------------------------'           '------''--------------------'
  */
  [_QWERTY] = LAYOUT( \
-    KC_ESC, KC_SPC, SGUI(KC_LBRC), SGUI(KC_RBRC), KC_NO,          LAG(0), LAG(1), LAG(2), KC_NO, KC_DEL, KC_ENT, KC_BSPC, \
+    KC_ESC, LGUI(KC_GRV), SGUI(KC_LBRC), SGUI(KC_RBRC), KC_SPC,          LAG(KC_0), LAG(KC_1), LAG(KC_2), MO(_LOWER), KC_DEL, KC_ENT, KC_BSPC, \
     KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T,                         KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSLS, \
     KC_LCTL, KC_A, KC_S, KC_D, KC_F, KC_G,                        KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, \
     KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B,   KC_LCBR, KC_RCBR,    KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT, \
